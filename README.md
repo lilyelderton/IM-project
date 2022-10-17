@@ -10,4 +10,12 @@ This is my lab book.
 
 10/10/22 - 12/10/22: I have been trying to use fulltext to read in full articles from pubmed into R but I haven't had much luck. It is much harder than I thought to follow someone else's work when there isn't clear explanation as to why each step was taken. I got very frustrated and wanted to give up, but I decided to practice some other skills instead so that i didn't get dejected with R overall - I needed the confidence that comes with getting something right. Thus, I read in some other files and practiced tidying them following along the example articles. This restored my confidence to try again on reading in my own work tomorrow. I will try to read in just the abstracts at first since there are a few packages for this that seem easier to use, and I will talk with Emma about reading in the full text on Friday in our meeting. 
 
-13/10/22: Tried a few packages to read in the abstracts from R. Lots of trial and error which was frustrating - even though i do feel accomplished when i finally figure out how it works. I managed to get as far as reading in the text (using RISmed - http://amunategui.github.io/pubmed-query/) and then tokenise the abstracts. Plan is to then practice some analysis on these abstracts. 
+13/10/22: Tried a few packages to read in the abstracts from R. Lots of trial and error which was frustrating - even though i do feel accomplished when i finally figure out how it works. I managed to get as far as reading in the text (using RISmed - http://amunategui.github.io/pubmed-query/) and then tokenise the abstracts. Plan is to then practice some analysis on these abstracts.
+
+14/10/22: Had a meeting with Emma. We worked through all the problems I'd had in my script and managed to fix most of them! It was nice just having another brain to help find where I went wrong as this can sometimes be hard to do alone - you get stuck on one path looking for a solution and then just end up frustrated. I left the meeting feeling much more confident in where I was at with my project - a result of fixing the problems and knowing i was doing enougb work (something i had been worried about). I think in future I need to try contacting Emma or Alice more often to help if I'm stuck as I do enjoy the team work/having a support network when it comes to R. I then came home and managed to fix the problem of keeping hyphenated words together myself, and then performed some simple analysis. In the next week, I would like to try topic modelling - Emma recommended it as a method that would be good in the project - and look into litsearchR as another package that I could use in my project. 
+
+
+
+
+
+
