@@ -14,6 +14,10 @@ This is my lab book.
 
 14/10/22: Had a meeting with Emma. We worked through all the problems I'd had in my script and managed to fix most of them! It was nice just having another brain to help find where I went wrong as this can sometimes be hard to do alone - you get stuck on one path looking for a solution and then just end up frustrated. I left the meeting feeling much more confident in where I was at with my project - a result of fixing the problems and knowing i was doing enougb work (something i had been worried about). I think in future I need to try contacting Emma or Alice more often to help if I'm stuck as I do enjoy the team work/having a support network when it comes to R. I then came home and managed to fix the problem of keeping hyphenated words together myself, and then performed some simple analysis. In the next week, I would like to try topic modelling - Emma recommended it as a method that would be good in the project - and look into litsearchR as another package that I could use in my project. 
 
+18/10/22: I practiced tf-idf and started on topic modeling for my practice dataset. Most of this went smoothly and so has built my confidence in using R. 
+
+19/10/22: Finished topic modeling for my dataset. Had to troubleshoot in a few places, but this did not take too long - my R problem solving is improving with practice. Topic modeling in this way didn't seem too suited to my dataset however - I think either the search was too narrow to divide into topics, or their were too many confounding terms (a lot of numbers?). I will discuss this with Emma at my meeting on Friday. Next I would like to look into litsearchR as a package. 
+
 
 
 
