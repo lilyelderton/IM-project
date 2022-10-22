@@ -18,6 +18,8 @@ This is my lab book.
 
 19/10/22: Finished topic modeling for my dataset. Had to troubleshoot in a few places, but this did not take too long - my R problem solving is improving with practice. Topic modeling in this way didn't seem too suited to my dataset however - I think either the search was too narrow to divide into topics, or their were too many confounding terms (a lot of numbers?). I will discuss this with Emma at my meeting on Friday. Next I would like to look into litsearchR as a package. 
 
+21/10/22: Today I practiced using litsearchR to assess the keywords associated with a pubmed search, and then using these to create a new search that should encompass the topic more effectively. The instructions were very clear to follow and so everything ran smoothly. I think that this package could be very useful in my project to assess whether keywords have changed over time as the PNI moves into IP, although I think the creating a new search tool may be harder to use - the results from those searches are massive making them too large to read into R. 
+I also had a short meeting with Emma. I had no problems to talk about this week so the meeting didn't feel very useful to me. In future I think I will plan out more of what I want to cover in these meetings so I can get the most out of them, as I don't enjoy feeling directionless. She did recommend making a full plan for my literature review that she can look over, so I will do this, as well as trying to make a comprehensive plan for the analysis i'd like to do for my project that I can show her next week. 
 
 
 
