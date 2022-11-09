@@ -16,10 +16,36 @@ This is my lab book.
 
 18/10/22: I practiced tf-idf and started on topic modeling for my practice dataset. Most of this went smoothly and so has built my confidence in using R. 
 
-19/10/22: Finished topic modeling for my dataset. Had to troubleshoot in a few places, but this did not take too long - my R problem solving is improving with practice. Topic modeling in this way didn't seem too suited to my dataset however - I think either the search was too narrow to divide into topics, or their were too many confounding terms (a lot of numbers?). I will discuss this with Emma at my meeting on Friday. Next I would like to look into litsearchR as a package. 
+19/10/22: Finished topic modeling for my dataset. Had to troubleshoot in a few places, but this did not take too long - my R problem solving is improving with practice. Topic modeling in this way didn't seem too suited to my dataset however - I think either the search was too narrow to divide into topics, or there were too many confounding terms (a lot of numbers?). I will discuss this with Emma at my meeting on Friday. Next I would like to look into litsearchR as a package. 
 
 21/10/22: Today I practiced using litsearchR to assess the keywords associated with a pubmed search, and then using these to create a new search that should encompass the topic more effectively. The instructions were very clear to follow and so everything ran smoothly. I think that this package could be very useful in my project to assess whether keywords have changed over time as the PNI moves into IP, although I think the creating a new search tool may be harder to use - the results from those searches are massive making them too large to read into R. 
 I also had a short meeting with Emma. I had no problems to talk about this week so the meeting didn't feel very useful to me. In future I think I will plan out more of what I want to cover in these meetings so I can get the most out of them, as I don't enjoy feeling directionless. She did recommend making a full plan for my literature review that she can look over, so I will do this, as well as trying to make a comprehensive plan for the analysis i'd like to do for my project that I can show her next week. 
+
+28/10: Meeting with Emma. I hadn't done much preparation for it as i was focusing on my literature review, and tbh i felt it. I learnt that to get something out of these meetings i need to put work into preparing for them each week. We tried to read full text into R from the articles but the packages that used to do that have been archived and there are no replacements. We didn't get anywhere with it and so it felt like a waste of a meeting. 
+
+4/11: I haven't done much R work again this week because of the lit review. We tried again in our meeting to read in the full text in various ways but nothing was working. I was ready to give up on analysing the full text going into the meeting, but then Emma managed to download the PDFs of most of the papers on the topic for me so that i could read those in to analyse. This reminded me to always persevere if i really want something done because with some applied problem solving there is a solution for most things in coding. Don't let frustration get the best of you! and be prepared to put in the time - even though it doesn't feel like the project is developing, it will be worth it in the long run. 
+I successfully read the PDFs into R and in the coming week I will try out all of the text mining methods on them before setting up my actual project. 
+
+7/11: Basic count analysis on the PDFs. Worked out that I need to exclude number stopwords after the tdm with removeNumbers = FALSE is done to stop it getting confused - and can't just straight up remove numbers since cytokines have numbers e.g. IL-6. Easy function with tm package to keep "-" included in the text. I would like to find a way to combine the words for the articles with the date and article ID ect for the actual project, but not what the best way to do this is. 
+
+8/11: Trialing other text mining techniques on dataset went smoothly. I am now ready to get started on the actual project I think. I am struggling with feeling a bit directionless in the project though. I will discuss a game plan with Emma on Friday as I like to work with a clear goal in mind for what comes next, or I tend to feel unmotivated/lost. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
