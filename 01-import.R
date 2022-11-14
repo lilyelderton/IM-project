@@ -6,7 +6,7 @@ files <- list.files(path = "data-raw/pubmed-immunopsyc-set",
                     full.names = TRUE)      # needs to prevent errors in finding files
 
 # use lapply to apply pdf_text to all files
-ip_pdf <- lapply(files, pdf_text)
+ip_text <- lapply(files, pdf_text) 
 
 # did that catch all documents? 
 length(ip_pdf) # it got all 119!
