@@ -48,9 +48,11 @@ Used RISmed to read in the dates for ip and pni articles and then made a grouped
 ### 11/11/22: 
 Came into meeting with Emma with targettedd questions this week, and feel like I got a lot more out of it, including a clear plan for my project going forwards. 
 
-### 13/11/12: 
+### 13/11/22: 
 Fixed barplot problem so now have an overlaid plot (so real counts are clear, not just summed count). Would like to increase axis ticks for both y and x axes though. 
 
+### 14/11/22:
+Perfected dates published graph so now I have my first figure! I have also thoroughly tidied my dataframes and tokenised them so they are ready to be analysed. I need to write the tidied IP and PNI dataframes to file, and then I can go through and analyse these to make more figures with tomorrow - preferrably a word count one, a network, and then some topic modelling ones? I want to try and sue topic modelling with ip as 1 topic and pni as another to see if there are differences. 
 
 
 
