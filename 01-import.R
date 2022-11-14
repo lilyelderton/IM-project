@@ -48,3 +48,56 @@ ip.dtm <- DocumentTermMatrix(ip_corp,
 ip_tidy <- tidy(ip.dtm)
 
 
+## Read in pubmed info for both immunopsychiatry and psychoneuroimmunology ##
+
+# set topics for search on pubmed
+ip_pm <- "immunopsychiatry OR immuno-psychiatry" # try to catch all that come up in pubmed
+pni_pm <- "psychoneuroimmunology OR psycho-neuro-immunology" 
+
+# search for topics on pubmed 
+search_ip <- EUtilsSummary(ip_pm)
+summary(search_ip) # collects 148 
+
+search_pni <- EUtilsSummary(pni_pm)
+summary(search_pni) # collects 3005
+                    # this will have to be split into chunks for EUtils to cope with 
+search_pni_1000 <- EUtilsSummary(pni_pm, retstart = 0, retmax = 1000)     
+search_pni_2000 <- EUtilsSummary(pni_pm, retstart = 1000, retmax = 1000)
+search_pni_3000 <- EUtilsSummary(pni_pm, retstart = 2000, retmax = 1005)
+
+# use EUtislGet to fetch the actual data 
+records_ip <- EUtilsGet(search_ip)
+
+records_pni_1000 <- EUtilsGet(search_pni_1000)
+records_pni_2000 <- EUtilsGet(search_pni_2000)
+records_pni_3000 <- EUtilsGet(search_pni_3000)
+
+# collect ID, year, title and abstract into a dataframe
+ip_data <- data.frame("ID" = ArticleId(records_ip), 
+                      "Year" = YearPubmed(records_ip), 
+                      "Title" = ArticleTitle(records_ip), 
+                      "Abstract" = AbstractText(records_ip))
+ip_data$Topic <- "Immunopsychiatry" # need to mark that these are immunopsychiatry
+
+pni_data_1000 <- data.frame("ID" = ArticleId(records_pni_1000), 
+                            "Year" = YearPubmed(records_pni_1000), 
+                            "Title" = ArticleTitle(records_pni_1000),
+                            "Abstract" = AbstractText(records_pni_1000))
+
+pni_data_2000 <- data.frame("ID" = ArticleId(records_pni_2000), 
+                            "Year" = YearPubmed(records_pni_2000), 
+                            "Title" = ArticleTitle(records_pni_2000), 
+                            "Abstract" = AbstractText(records_pni_2000))
+
+pni_data_3000 <- data.frame("ID" = ArticleId(records_pni_3000), 
+                            "Year" = YearPubmed(records_pni_3000), 
+                            "Title" = ArticleTitle(records_pni_3000), 
+                            "Abstract" = AbstractText(records_pni_3000))
+
+# pni will then need to be combined into one dataframe
+pni_data <- rbind(pni_data_1000, pni_data_2000, pni_data_3000) # combine pni dfs
+pni_data$Topic <- "Psychoneuroimmunology" # marks the topic as psychoneuroimmunology
+
+
+
+
