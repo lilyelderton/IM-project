@@ -26,27 +26,20 @@ ip_corp <- tm_map(ip_corp, removePunctuation,
                   ucp = TRUE)  # looks for unicode punctuation
                                # need this because pdf_text preserves curly-quotes and em-dashes
 
-# create a term document matrix 
-ip.tdm <- TermDocumentMatrix(ip_corp, 
+# create a document term matrix 
+ip_full_dtm <- DocumentTermMatrix(ip_corp, 
                              control = 
                                list(stopwords = TRUE, # remove stopwords
                                     tolower = TRUE,   # make lowercase
                                     stemming = FALSE, # don't reduce words to their stems
                                     removeNumbers = FALSE)) %>%  # don't remove numbers here because some are still needed 
   gofastr::remove_stopwords(stopwords = add_stopwords) # need to remove unimportant numbers and words so they don't skew analysis 
-
-# create a document term matrix 
-ip.dtm <- DocumentTermMatrix(ip_corp, 
-                             control = 
-                               list(stopwords = TRUE, 
-                                    tolower = TRUE,   
-                                    stemming = FALSE, 
-                                    removeNumbers = FALSE)) %>% 
-  gofastr::remove_stopwords(stopwords = add_stopwords)
-
+  
 # create tidy dataframe 
-ip_tidy <- tidy(ip.dtm)
+ip_full_tidy <- tidy(ip_full_dtm)
 
+# write to file 
+write.csv(ip_full_tidy, "data-tidy/ip_full_tidy.csv")
 
 ## Read in pubmed info for both immunopsychiatry and psychoneuroimmunology ##
 
@@ -98,6 +91,7 @@ pni_data_3000 <- data.frame("ID" = ArticleId(records_pni_3000),
 pni_data <- rbind(pni_data_1000, pni_data_2000, pni_data_3000) # combine pni dfs
 pni_data$Topic <- "Psychoneuroimmunology" # marks the topic as psychoneuroimmunology
 
-
-
+# write to file 
+write.csv(ip_data, "data-raw/ip_data_raw.csv")
+write.csv(pni_data, "data-raw/pni_data_raw.csv")
 
