@@ -13,4 +13,22 @@ add_stopwords <- c(clinpsy_stopwords, numbers_stopwords, tidytext_stopwords)
 add_stopwords_df <- as.data.frame(add_stopwords)
 colnames(add_stopwords_df) <- "word"  # need to match the col name with the other dataframe
 
+# stopwords for full text 
+# can see they are needed as they skew the top words in the articles 
 
+full_stopwords <- c("research", "university", "including", 
+                    "references", "data", "found", "evidence", 
+                    "received", "potential", "model", "department", 
+                    "authors", "role", "accepted", "article", "institute", 
+                    "published", "time", "online", "national", "future", 
+                    "recent", "levels", "due", "models", "risk", "methods", 
+                    "shown", "observed", "test", "mechanisms", "relationship", 
+                    "multiple", "biol", "tion", "supported", "support", "similar", 
+                    "level", "information", "factor", "factors", "differences",
+                    "author", "activity")
+
+full_stopwords <- as.data.frame(full_stopwords)
+colnames(full_stopwords) <- "term"
+
+
+                                
