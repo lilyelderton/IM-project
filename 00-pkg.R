@@ -10,4 +10,6 @@ library(tidyr)        # combine dataframes
 library(RISmed)       # collecting data from pubmed queries
 library(dplyr)        # general data analysis 
 library(ggplot2)      # graphs
-
+library(scales)       # graphs
+library(topicmodels)  # topic modelling
+library(forcats)      # reordering geom_col
