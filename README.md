@@ -52,7 +52,10 @@ Came into meeting with Emma with targettedd questions this week, and feel like I
 Fixed barplot problem so now have an overlaid plot (so real counts are clear, not just summed count). Would like to increase axis ticks for both y and x axes though. 
 
 ### 14/11/22:
-Perfected dates published graph so now I have my first figure! I have also thoroughly tidied my dataframes and tokenised them so they are ready to be analysed. I need to write the tidied IP and PNI dataframes to file, and then I can go through and analyse these to make more figures with tomorrow - preferrably a word count one, a network, and then some topic modelling ones? I want to try and sue topic modelling with ip as 1 topic and pni as another to see if there are differences. 
+Perfected dates published graph so now I have my first figure! I have also thoroughly tidied my dataframes and tokenised them so they are ready to be analysed. I need to write the tidied IP and PNI dataframes to file, and then I can go through and analyse these to make more figures with tomorrow - preferrably a word count one, a network, and then some topic modelling ones? I want to try and do topic modelling with ip as 1 topic and pni as another to see if there are differences. 
+
+### 15/11/22: 
+Made 2 nice figs showing correlation between ip and pni. Started topic modelling but got confused so stopped for the day - need to make consesus data so i can then use augment. 
 
 
 
