@@ -57,6 +57,9 @@ Perfected dates published graph so now I have my first figure! I have also thoro
 ### 15/11/22: 
 Made 2 nice figs showing correlation between ip and pni. Started topic modelling but got confused so stopped for the day - need to make consesus data so i can then use augment. 
 
+### 16/11/22: 
+I tried to make a topic model confusion matrix but I'm not sure if it is right - it seems like the counts might be wrong when the consensus topic is joined?? I would like to check if I have gone wrong on Friday, or if the graph actually is right but just looks strange. I have started analysing the full pdfs, and would next like to look at bigrams and make networks etc. 
+
 
 
 
