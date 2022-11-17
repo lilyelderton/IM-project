@@ -114,12 +114,6 @@ top_terms %>%
   facet_wrap(~ topic, scales = "free") +
   scale_y_reordered()
 
-
-
-
-
-
-
 ## examine per-document classification 
 # make dataframe for topic and titles 
 abstract_counts_by_topic <- abstracts %>% 
