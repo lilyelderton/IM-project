@@ -13,3 +13,5 @@ library(ggplot2)      # graphs
 library(scales)       # graphs
 library(topicmodels)  # topic modelling
 library(forcats)      # reordering geom_col
+library(wordcloud2)   # wordcloud
+library(htmlwidgets)  # to save wordcloud
